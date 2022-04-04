@@ -183,6 +183,10 @@ namespace Site_Details
         
         void activateRating(int num)
         {
+            //TODO: Move to within a submit button on-click event.
+            //Displays a popup message.
+            MessageBox.Show("Thanks for rating!");
+
             //Note to self: Don't use ELSE.
             if (num != 1)
             {
