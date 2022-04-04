@@ -121,6 +121,40 @@ namespace Site_Details
 
         }
         #endregion
+
+        #region Shortcut functions
+        /// <summary>
+        /// Toggles the visibility of tabs. Set to TRUE to set the text box visible. Set to FALSE to set the rating visible.
+        /// </summary>
+        /// <param name="opt"></param>
+        void tabVisibility(bool opt)
+        {
+            opt = !opt; //Reversing value for simplicity.
+
+            displayText.Visible = !opt;
+            opt1.Visible = opt;
+            opt2.Visible = opt;
+            opt3.Visible = opt;
+            opt4.Visible = opt;
+            opt5.Visible = opt;
+            opt1Label.Visible = opt;
+            opt2Label.Visible = opt;
+            opt3Label.Visible = opt;
+            opt4Label.Visible = opt;
+            opt5Label.Visible = opt;
+        }
+
+        void rateHighlight(int num)
+        {
+            //Note to self: Don't use ELSE.
+            if (num != 1)
+            {
+                //Change colors of opt1 and reset others'.
+            }
+        }
+        #endregion
+    }
+
     public class SiteDetails
     {
         public SiteDetails(string[] aboutTexts, string[] rulesTexts, string[] rateTexts)
