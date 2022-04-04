@@ -133,27 +133,33 @@ namespace Site_Details
         #region Rate button events
         private void Rate5Btn_OnClick(object sender, EventArgs e)
         {
-
+            activateRating(5);
         }
 
         private void Rate4Btn_OnClick(object sender, EventArgs e)
         {
-
+            activateRating(4);
         }
 
         private void Rate3Btn_OnClick(object sender, EventArgs e)
         {
-
+            activateRating(3);
         }
 
         private void Rate2Btn_OnClick(object sender, EventArgs e)
         {
-
+            activateRating(2);
         }
 
         private void Rate1Btn_OnClick(object sender, EventArgs e)
         {
+            activateRating(1);
+        }
 
+        private void SubmitBtn_OnClick(object sender, EventArgs e)
+        {
+            //Displays a popup message.
+            MessageBox.Show("Thanks for rating!");
         }
         #endregion
 
@@ -178,14 +184,12 @@ namespace Site_Details
             opt3Label.Visible = opt;
             opt4Label.Visible = opt;
             opt5Label.Visible = opt;
+            submitButton.Visible = opt;
         }
 
         
         void activateRating(int num)
         {
-            //TODO: Move to within a submit button on-click event.
-            //Displays a popup message.
-            MessageBox.Show("Thanks for rating!");
 
             //Note to self: Don't use ELSE.
             if (num != 1)
@@ -193,13 +197,13 @@ namespace Site_Details
                 //Change colors of opt1 and reset others'.
             }
         }
-        #endregion
-    }
+		#endregion
+	}
 
-    /// <summary>
-    /// An object that holds the texts to be displayed in the UI.
-    /// </summary>
-    public class SiteDetails
+	/// <summary>
+	/// An object that holds the texts to be displayed in the UI.
+	/// </summary>
+	public class SiteDetails
     {
         public SiteDetails(string[] aboutTexts, string[] rulesTexts, string[] rateTexts)
         {
