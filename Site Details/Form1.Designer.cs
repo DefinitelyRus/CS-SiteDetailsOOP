@@ -31,13 +31,13 @@
             this.titleLabel = new System.Windows.Forms.Label();
             this.aboutButton = new System.Windows.Forms.Button();
             this.rulesButton = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.displayText = new System.Windows.Forms.TextBox();
             this.rateButton = new System.Windows.Forms.Button();
             this.opt1 = new System.Windows.Forms.Button();
             this.opt2 = new System.Windows.Forms.Button();
-            this.op3 = new System.Windows.Forms.Button();
-            this.op4 = new System.Windows.Forms.Button();
-            this.op5 = new System.Windows.Forms.Button();
+            this.opt3 = new System.Windows.Forms.Button();
+            this.opt4 = new System.Windows.Forms.Button();
+            this.opt5 = new System.Windows.Forms.Button();
             this.opt1Label = new System.Windows.Forms.Label();
             this.opt2Label = new System.Windows.Forms.Label();
             this.opt3Label = new System.Windows.Forms.Label();
@@ -67,6 +67,7 @@
             this.aboutButton.TabIndex = 2;
             this.aboutButton.Text = "About Us";
             this.aboutButton.UseVisualStyleBackColor = false;
+            this.aboutButton.Click += new System.EventHandler(this.aboutBtn_OnClick);
             // 
             // rulesButton
             // 
@@ -79,18 +80,20 @@
             this.rulesButton.TabIndex = 3;
             this.rulesButton.Text = "Rules";
             this.rulesButton.UseVisualStyleBackColor = true;
+            this.rulesButton.Click += new System.EventHandler(this.RulesBtn_OnClick);
             // 
-            // textBox1
+            // displayText
             // 
-            this.textBox1.AcceptsReturn = true;
-            this.textBox1.AcceptsTab = true;
-            this.textBox1.Location = new System.Drawing.Point(12, 112);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox1.Size = new System.Drawing.Size(1426, 678);
-            this.textBox1.TabIndex = 4;
+            this.displayText.AcceptsReturn = true;
+            this.displayText.AcceptsTab = true;
+            this.displayText.Font = new System.Drawing.Font("Segoe UI Light", 21F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.displayText.Location = new System.Drawing.Point(12, 112);
+            this.displayText.Multiline = true;
+            this.displayText.Name = "displayText";
+            this.displayText.ReadOnly = true;
+            this.displayText.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.displayText.Size = new System.Drawing.Size(1426, 554);
+            this.displayText.TabIndex = 4;
             // 
             // rateButton
             // 
@@ -103,6 +106,7 @@
             this.rateButton.TabIndex = 5;
             this.rateButton.Text = "Rate Us";
             this.rateButton.UseVisualStyleBackColor = true;
+            this.rateButton.Click += new System.EventHandler(this.RateBtn_OnClick);
             // 
             // opt1
             // 
@@ -114,6 +118,7 @@
             this.opt1.Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit";
             this.opt1.UseVisualStyleBackColor = true;
             this.opt1.Visible = false;
+            this.opt1.Click += new System.EventHandler(this.Rate5Btn_OnClick);
             // 
             // opt2
             // 
@@ -125,39 +130,43 @@
             this.opt2.Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit";
             this.opt2.UseVisualStyleBackColor = true;
             this.opt2.Visible = false;
+            this.opt2.Click += new System.EventHandler(this.Rate4Btn_OnClick);
             // 
-            // op3
+            // opt3
             // 
-            this.op3.Font = new System.Drawing.Font("Segoe UI Light", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.op3.Location = new System.Drawing.Point(198, 355);
-            this.op3.Name = "op3";
-            this.op3.Size = new System.Drawing.Size(1240, 75);
-            this.op3.TabIndex = 8;
-            this.op3.Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit";
-            this.op3.UseVisualStyleBackColor = true;
-            this.op3.Visible = false;
+            this.opt3.Font = new System.Drawing.Font("Segoe UI Light", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.opt3.Location = new System.Drawing.Point(198, 355);
+            this.opt3.Name = "opt3";
+            this.opt3.Size = new System.Drawing.Size(1240, 75);
+            this.opt3.TabIndex = 8;
+            this.opt3.Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit";
+            this.opt3.UseVisualStyleBackColor = true;
+            this.opt3.Visible = false;
+            this.opt3.Click += new System.EventHandler(this.Rate3Btn_OnClick);
             // 
-            // op4
+            // opt4
             // 
-            this.op4.Font = new System.Drawing.Font("Segoe UI Light", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.op4.Location = new System.Drawing.Point(198, 436);
-            this.op4.Name = "op4";
-            this.op4.Size = new System.Drawing.Size(1240, 75);
-            this.op4.TabIndex = 9;
-            this.op4.Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit";
-            this.op4.UseVisualStyleBackColor = true;
-            this.op4.Visible = false;
+            this.opt4.Font = new System.Drawing.Font("Segoe UI Light", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.opt4.Location = new System.Drawing.Point(198, 436);
+            this.opt4.Name = "opt4";
+            this.opt4.Size = new System.Drawing.Size(1240, 75);
+            this.opt4.TabIndex = 9;
+            this.opt4.Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit";
+            this.opt4.UseVisualStyleBackColor = true;
+            this.opt4.Visible = false;
+            this.opt4.Click += new System.EventHandler(this.Rate2Btn_OnClick);
             // 
-            // op5
+            // opt5
             // 
-            this.op5.Font = new System.Drawing.Font("Segoe UI Light", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.op5.Location = new System.Drawing.Point(198, 517);
-            this.op5.Name = "op5";
-            this.op5.Size = new System.Drawing.Size(1240, 75);
-            this.op5.TabIndex = 10;
-            this.op5.Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit";
-            this.op5.UseVisualStyleBackColor = true;
-            this.op5.Visible = false;
+            this.opt5.Font = new System.Drawing.Font("Segoe UI Light", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.opt5.Location = new System.Drawing.Point(198, 517);
+            this.opt5.Name = "opt5";
+            this.opt5.Size = new System.Drawing.Size(1240, 75);
+            this.opt5.TabIndex = 10;
+            this.opt5.Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit";
+            this.opt5.UseVisualStyleBackColor = true;
+            this.opt5.Visible = false;
+            this.opt5.Click += new System.EventHandler(this.Rate1Btn_OnClick);
             // 
             // opt1Label
             // 
@@ -219,19 +228,19 @@
             this.AcceptButton = this.aboutButton;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1450, 802);
+            this.ClientSize = new System.Drawing.Size(1450, 678);
             this.Controls.Add(this.opt5Label);
             this.Controls.Add(this.opt4Label);
             this.Controls.Add(this.opt3Label);
             this.Controls.Add(this.opt2Label);
             this.Controls.Add(this.opt1Label);
-            this.Controls.Add(this.op5);
-            this.Controls.Add(this.op4);
-            this.Controls.Add(this.op3);
+            this.Controls.Add(this.opt5);
+            this.Controls.Add(this.opt4);
+            this.Controls.Add(this.opt3);
             this.Controls.Add(this.opt2);
             this.Controls.Add(this.opt1);
             this.Controls.Add(this.rateButton);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.displayText);
             this.Controls.Add(this.rulesButton);
             this.Controls.Add(this.aboutButton);
             this.Controls.Add(this.titleLabel);
@@ -243,6 +252,7 @@
             this.ShowIcon = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "yummytehfuddasaidotcomnyaaa~";
+            this.Load += new System.EventHandler(this.Form1_OnLoad);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -253,17 +263,17 @@
         public Label titleLabel;
         public Button aboutButton;
         public Button rulesButton;
-        internal TextBox textBox1;
         public Button rateButton;
         public Button opt1;
         public Button opt2;
-        public Button op3;
-        public Button op4;
-        public Button op5;
+        public Button opt3;
+        public Button opt4;
+        public Button opt5;
         public Label opt1Label;
         public Label opt2Label;
         public Label opt3Label;
         public Label opt4Label;
         public Label opt5Label;
+        public TextBox displayText;
     }
 }
