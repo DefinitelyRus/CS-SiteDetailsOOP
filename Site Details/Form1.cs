@@ -83,16 +83,19 @@ namespace Site_Details
 
         private void aboutBtn_OnClick(object sender, EventArgs e)
         {
+            tabVisibility(true);
             displayText.Lines = details.About;
         }
 
         private void RulesBtn_OnClick(object sender, EventArgs e)
         {
+            tabVisibility(true);
             displayText.Lines = details.Rules;
         }
 
         private void RateBtn_OnClick(object sender, EventArgs e)
         {
+            tabVisibility(false);
         }
 
         #region Rate button events
