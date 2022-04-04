@@ -16,14 +16,14 @@ namespace Site_Details
                 "Bartholomew, sa pinagsama-samang kakaibang mga ideya ito ay nabuo. Burger " +
                 "at fries ang kanilang pinaka produkto. Ang restaurant na ito ay isang ambisyon " +
                 "na pilit tinutupad ng mga magkakagrupo. Sa tinagal ng panahon di malayong " +
-                "ito�y maging patok din sa masa, ito ay proud pinoy brand na naglalayong " +
+                "ito'y maging patok din sa masa, ito ay proud pinoy brand na naglalayong " +
                 "makarating ng ibat ibang bansa at makilala. Pinagmamalaki nila ang burger na " +
-                "kung tawagin ay soo lit� dahil ito�y swak na swak sa bulsa ng masa ngunit kakaiba " +
-                "ang sarap na naibibigay. Ang YUMMY TEH FUD DA SAI� din ang pwedeng maging " +
+                "kung tawagin ay soo lit' dahil ito'y swak na swak sa bulsa ng masa ngunit kakaiba " +
+                "ang sarap na naibibigay. Ang YUMMY TEH FUD DA SAI' din ang pwedeng maging " +
                 "kauna - unahang brand na maitatatag dahil lamang sa proyekto nila noong " +
                 "highschool. Hindi pa laganap ang aming branch ngunit patuloy na nagsisikap " +
                 "upang makilala at tangkilikin ng kapawa kababayan natin ang produktong sariling " +
-                "atin. Muli ito ang YUMMY TEH FUD DA SAI� order na!",
+                "atin. Muli ito ang YUMMY TEH FUD DA SAI' order na!",
                 "",
                 "To place order kindly go to www.yummytehfuddasai.com.ph",
                 "Landline number: 069 - 6969"
@@ -47,7 +47,7 @@ namespace Site_Details
                 "    c. When the guest is through, remove the appetizer dish.",
                 "    d. Serve the soup at the center of the cover.",
                 "    e. Remove the soup plate or soup bowl after the guest is finished with the course.",
-                "    f. Serve the main dish or entr�e at the center of the cover in front of the guest.",
+                "    f. Serve the main dish or entree at the center of the cover in front of the guest.",
                 "    g. When the guest is through, remove main dishes and used flatware. Leave " +
                 "the water glass, which is constantly replenished throughout the meal. Leave " +
                 "the dessert implements, either teaspoon or dessert fork, if they are set on " +
@@ -66,7 +66,7 @@ namespace Site_Details
             string[] rateArray =
                 {
                     "graVity ha, grabe nga yan vebs!",
-                    "why? why naman 4 lang? di na ba ako special sayo? Diba sabi mo, I�m only four you",
+                    "why? why naman 4 lang? di na ba ako special sayo? Diba sabi mo, I'm only four you",
                     "bakit? threegered ka ba? Soury na, uwu",
                     "seryoso? hindi e2 biro ah, ayusin mo.",
                     "nag rate ka pa"
