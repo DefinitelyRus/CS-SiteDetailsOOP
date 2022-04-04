@@ -2,12 +2,15 @@ namespace Site_Details
 {
     public partial class Form1 : Form
     {
+        #region Declaration
         public SiteDetails details;
         public Form1()
         {
             InitializeComponent();
         }
+        #endregion
 
+        #region Basic events
         private void Form1_OnLoad(object sender, EventArgs e)
         {
             string[] about = new string[]
@@ -62,7 +65,6 @@ namespace Site_Details
                 "5. For breakfast, the order of service begins with the fruit or fruit juice.This is " +
                 "equivalent to soup and appetizer for lunch and dinner."
             };
-
             string[] rateArray =
                 {
                     "graVity ha, grabe nga yan vebs!",
@@ -97,6 +99,7 @@ namespace Site_Details
         {
             tabVisibility(false);
         }
+        #endregion
 
         #region Rate button events
         private void Rate5Btn_OnClick(object sender, EventArgs e)
