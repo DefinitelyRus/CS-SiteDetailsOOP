@@ -180,7 +180,8 @@ namespace Site_Details
             opt5Label.Visible = opt;
         }
 
-        void rateHighlight(int num)
+        
+        void activateRating(int num)
         {
             //Note to self: Don't use ELSE.
             if (num != 1)
