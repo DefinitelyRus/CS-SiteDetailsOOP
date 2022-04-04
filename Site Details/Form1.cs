@@ -3,7 +3,10 @@ namespace Site_Details
     public partial class Form1 : Form
     {
         #region Declaration
+
+        //Declares a SiteDetails variable with no assigned value.
         public SiteDetails details;
+
         public Form1()
         {
             InitializeComponent();
@@ -13,6 +16,20 @@ namespace Site_Details
         #region Basic events
         private void Form1_OnLoad(object sender, EventArgs e)
         {
+            /* 
+             * Text to be displayed on the UI.
+             * 
+             * about & rules are stored as STRING arrays as a requirement by Windows Forms designer.
+             * Each index counts as a new line, unlike other solutions that use "\n" as a break.
+             * Lines can still be broken into several visible lines but only due to word wrapping.
+             * If the UI is allowed to be extended horizontally, the word wrapping will no longer apply
+             * and the whole string will be displayed as a single line.
+             * 
+             * rateArray is stored as a STRING array as well, but for a different reason.
+             * Instead of having to make 5 different variables for essentially the same purpose,
+             * only different targets, I combined them into an array instead for simplicity instead.
+             */
+            
             string[] about = new string[]
             {
                 "YUMMY TEH FUD DA SAI' ay isang restaurant na nagawa ng mga estudyante ng " +
@@ -75,6 +92,7 @@ namespace Site_Details
                 };
             details = new(about, rules, rateArray);
 
+            //Applies changes on startup.
             displayText.Lines = details.About;
             opt1.Text = details.Rate[0];
             opt2.Text = details.Rate[1];
@@ -83,20 +101,31 @@ namespace Site_Details
             opt5.Text = details.Rate[4];
         }
 
+        //When aboutButton is clicked...
         private void aboutBtn_OnClick(object sender, EventArgs e)
         {
+            //Make the text display visible.
             tabVisibility(true);
+
+            //Set the text to value of details.About.
             displayText.Lines = details.About;
         }
 
+        //When rulesButton is clicked...
         private void RulesBtn_OnClick(object sender, EventArgs e)
         {
+            //Make the text display visible.
             tabVisibility(true);
+
+            //Set the text to value of details.Rules.
             displayText.Lines = details.Rules;
         }
 
+        //When rateButton is clicked...
         private void RateBtn_OnClick(object sender, EventArgs e)
         {
+            //Make the text display invisible.
+            //Subsequently, this also makes the buttons visible.
             tabVisibility(false);
         }
         #endregion
@@ -137,6 +166,7 @@ namespace Site_Details
         {
             opt = !opt; //Reversing value for simplicity.
 
+            //Make the individual elements visible or invisible.
             displayText.Visible = !opt;
             opt1.Visible = opt;
             opt2.Visible = opt;
@@ -161,6 +191,9 @@ namespace Site_Details
         #endregion
     }
 
+    /// <summary>
+    /// An object that holds the texts to be displayed in the UI.
+    /// </summary>
     public class SiteDetails
     {
         public SiteDetails(string[] aboutTexts, string[] rulesTexts, string[] rateTexts)
