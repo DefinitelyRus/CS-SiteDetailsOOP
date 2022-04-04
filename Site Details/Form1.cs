@@ -184,6 +184,7 @@ namespace Site_Details
             opt3Label.Visible = opt;
             opt4Label.Visible = opt;
             opt5Label.Visible = opt;
+            rateUsLabel.Visible = opt;
             submitButton.Visible = opt;
         }
 
