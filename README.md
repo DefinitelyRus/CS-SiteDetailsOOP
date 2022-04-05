@@ -1,8 +1,18 @@
 # InfoApp
 This app is made to display the About Us, Rules, and Rating sections of a would-be restaurant. It features a simple and easy-to-use UI with very little setup required (not yet implemented).
 
+## Hardware and Software requirements
+**There are no definitive minimum spec requirements to run this project. The listed specs are NOT the required specs.** However, this project was made and tested on Windows 10 Home Single-language v21H2 64-bit running on the specs listed below.
+- AMD Ryzen 7 4800H 8-core
+- RTX 3050 Mobile 4GB vRAM
+- 8GB dRAM
+
+**Any modern machine, even of much lower spec, can run this project**, as long as the OS matches or is newer than Windows 10 v21H2. Even then, it could be assumed that this project will also run just fine on Windows 7 and most versions succeeding it, including Windows 11. Linux and MacOS emulation compatibility is not guaranteed.
+
+**TL;DR**: If your device is running Windows 8 or newer, you can run this program... probably.
+
 ## Setup process
-As of version 1.0.0-beta, the app only runs in-IDE using Visual Studio 2022 with .NET Core 6.0 package installed. **If you don't already have these installed**, see [the official installation tutorial for Visual Studio 2022](https://docs.microsoft.com/en-us/visualstudio/install/install-visual-studio?view=vs-2022) and [the official installation tutorial for .NET Core 6.0](https://docs.microsoft.com/en-us/dotnet/core/install/windows?tabs=net60#install-with-visual-studio) for more info about that.
+As of version 1.0.1-beta, the app only runs in-IDE using Visual Studio 2022 with .NET Core 6.0 package installed. **If you don't already have these installed**, see [the official installation tutorial for Visual Studio 2022](https://docs.microsoft.com/en-us/visualstudio/install/install-visual-studio?view=vs-2022) and [the official installation tutorial for .NET Core 6.0](https://docs.microsoft.com/en-us/dotnet/core/install/windows?tabs=net60#install-with-visual-studio) for more info about that.
 
 1. **Go to [the releases page](https://github.com/DefinitelyRus/CS-SiteDetailsOOP/releases)** and look for the latest version.
 
@@ -24,13 +34,21 @@ As of version 1.0.0-beta, the app only runs in-IDE using Visual Studio 2022 with
 
 6. **Close Visual Studio and reopen `Site Details.sln`.** You can now run the program by pressing the same button (see step 5).
 
-## Hardware and Software requirements
-**There are no definitive minimum spec requirements to run this project.** However, this project was made and tested on Windows 10 Home Single-language v21H2 64-bit running on the following specs:
-- AMD Ryzen 7 4800H 8-core
-- RTX 3050 Mobile 4GB vRAM
-- 8GB dRAM
+## How to use
+![image](https://user-images.githubusercontent.com/72731965/161677495-26378af7-758f-483d-9339-874ac0f77190.png)
 
-It is very likely that a machine of much lower spec can run this project, as long as the OS matches or is newer than Windows 10 v21H2. Even then, it could be assumed that this project will also run just fine on Windows 7 and most versions succeeding it, including Windows 11. Linux and MacOS emulation compatibility is not guaranteed.
+The use of this application is not linear and is an almost fully read-only experience; there is no real need for instructions. Regardless, here are some basics:
+
+There are 3 tabs you can swap between: "About Us", "Rules, and "Rate Us".
+
+![image](https://user-images.githubusercontent.com/72731965/161677612-28941d23-e3dd-4fdd-b8ed-d925a01e4d9d.png)
+
+The first 2 tabs both only display a text box with different contents, both of which are self-explanatory.
+
+The 3rd tab hides the text box and displays 5 buttons for rating and 1 for submit. Clicking any of the 5 buttons do nothing. Clicking the submit button will display popup message and does nothing else.
+
+![image](https://user-images.githubusercontent.com/72731965/161677715-ecba65dd-c28b-4e65-bb7a-c58294eebe80.png)
+![image](https://user-images.githubusercontent.com/72731965/161677763-3b3c10c1-c000-4f7c-b807-ddb2302ecfc3.png)
 
 ## Difficulties
 (All listed here are written in the perspective of a would-be beginner and is not representative of actual difficulties experienced during development.)
