@@ -6,6 +6,9 @@ namespace Site_Details
 
         //Declares a SiteDetails variable with no assigned value.
         public SiteDetails details;
+        private Color orange = Color.FromArgb(255, 162, 68);
+        private Color gray0 = Color.FromArgb(34, 34, 34);
+        private Color black = Color.Black;
 
         public Form1()
         {
@@ -110,6 +113,14 @@ namespace Site_Details
             //Set the text to value of details.About.
             displayText.Lines = details.About;
             displayText.ScrollBars = ScrollBars.None;
+
+            //Change button colors.
+            aboutButton.ForeColor = black;
+            aboutButton.BackColor = orange;
+            rulesButton.ForeColor = orange;
+            rulesButton.BackColor = gray0;
+            rateButton.ForeColor = orange;
+            rateButton.BackColor = gray0;
         }
 
         //When rulesButton is clicked...
@@ -121,6 +132,14 @@ namespace Site_Details
             //Set the text to value of details.Rules.
             displayText.Lines = details.Rules;
             displayText.ScrollBars = ScrollBars.Vertical;
+
+            //Change button colors.
+            aboutButton.ForeColor = orange;
+            aboutButton.BackColor = gray0;
+            rulesButton.ForeColor= black;
+            rulesButton.BackColor = orange;
+            rateButton.ForeColor= orange;
+            rateButton.BackColor = gray0;
         }
 
         //When rateButton is clicked...
@@ -129,6 +148,14 @@ namespace Site_Details
             //Make the text display invisible.
             //Subsequently, this also makes the buttons visible.
             TabVisibility(false);
+
+            //Change button colors.
+            aboutButton.ForeColor = orange;
+            aboutButton.BackColor = gray0;
+            rulesButton.ForeColor = orange;
+            rulesButton.BackColor = gray0;
+            rateButton.ForeColor = black;
+            rateButton.BackColor = orange;
         }
         #endregion
 
