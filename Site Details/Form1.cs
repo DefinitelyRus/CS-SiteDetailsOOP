@@ -160,6 +160,8 @@ namespace Site_Details
         {
             //Displays a popup message.
             MessageBox.Show("Thanks for rating!");
+
+            AboutBtn_OnClick(sender, e);
         }
         #endregion
 
@@ -192,10 +194,8 @@ namespace Site_Details
         void ActivateRating(int num)
         {
 
-            //Note to self: Don't use ELSE.
             if (num != 1)
             {
-                //Change colors of opt1 and reset others'.
             }
         }
 		#endregion
