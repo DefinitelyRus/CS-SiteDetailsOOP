@@ -2,7 +2,7 @@
 This app is made to display the About Us, Rules, and Rating sections of a would-be restaurant. It features a simple and easy-to-use UI with very little setup required (not yet implemented).
 
 ## Setup process
-As of version 1.0.0-beta, the app only runs in-IDE using Visual Studio 2022 with .NET Core 6.0 package installed. See [the official installation tutorial for Visual Studio 2022](https://docs.microsoft.com/en-us/visualstudio/install/install-visual-studio?view=vs-2022) and [the official installation tutorial for .NET Core 6.0](https://docs.microsoft.com/en-us/dotnet/core/install/windows?tabs=net60#install-with-visual-studio) for more info about that.
+As of version 1.0.0-beta, the app only runs in-IDE using Visual Studio 2022 with .NET Core 6.0 package installed. **If you don't already have these installed**, see [the official installation tutorial for Visual Studio 2022](https://docs.microsoft.com/en-us/visualstudio/install/install-visual-studio?view=vs-2022) and [the official installation tutorial for .NET Core 6.0](https://docs.microsoft.com/en-us/dotnet/core/install/windows?tabs=net60#install-with-visual-studio) for more info about that.
 
 1. Go to [the releases page](https://github.com/DefinitelyRus/CS-SiteDetailsOOP/releases) and look for the latest version.
 
