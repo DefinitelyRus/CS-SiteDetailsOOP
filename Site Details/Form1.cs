@@ -5,10 +5,10 @@ namespace Site_Details
         #region Declaration
 
         //Declares a SiteDetails variable with no assigned value.
-        public SiteDetails details;
-        private Color orange = Color.FromArgb(255, 162, 68);
-        private Color gray0 = Color.FromArgb(34, 34, 34);
-        private Color black = Color.Black;
+        private SiteDetails details;
+        readonly private Color orange = Color.FromArgb(255, 162, 68);
+        readonly private Color gray0 = Color.FromArgb(34, 34, 34);
+        readonly private Color black = Color.Black;
 
         public Form1()
         {
