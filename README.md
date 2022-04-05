@@ -12,9 +12,9 @@ As of version 1.0.0-beta, the app only runs in-IDE using Visual Studio 2022 with
 
 ![image](https://user-images.githubusercontent.com/72731965/161649128-0f03b6f4-b20a-418f-8686-959f48ffb65b.png)
 
-3. Go to your downloads folder, then **extract `CS-SiteDetailsOOP-1.0.0-beta.zip`**.
+3. Go to your downloads folder, then **extract `InfoApp-1.0.0-beta.zip`**.
 
-4. Go to the extracted folder (same name, without the `.zip`), then open `Site Details.sln`. This will open the solution and project in Visual Studio.
+4. Go to the extracted folder (same name, without the `.zip`), then **open `Site Details.sln`**. This will open the solution and project in Visual Studio.
 
 ![image](https://user-images.githubusercontent.com/72731965/161649412-eba9e993-8ce2-40b6-8bad-33db9e4ea876.png)
 
@@ -33,6 +33,6 @@ As of version 1.0.0-beta, the app only runs in-IDE using Visual Studio 2022 with
 It is very likely that a machine of much lower spec can run this project, as long as the OS matches or is newer than Windows 10 v21H2. Even then, it could be assumed that this project will also run just fine on Windows 7 and most versions succeeding it, including Windows 11. Linux and MacOS emulation compatibility is not guaranteed.
 
 ## Difficulties
-(All listed here are written in the perspective of a would-be beginner.)
+(All listed here are written in the perspective of a would-be beginner and is not representative of actual difficulties experienced during development.)
 
 Getting used to OOP was confusing at first but I got over it once it became clear to me what its purpose is. Making the rules tab display different content is also hard to work around. There was no clear way to do it other than to use regular windows tabs which doesn't look good for my purposes. I also had trouble making the UI look good, since the designer is apparently not intended for good looks, but rather for simplicity and function.
