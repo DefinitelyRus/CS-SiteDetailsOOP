@@ -163,6 +163,21 @@ namespace Site_Details
             //Displays a popup message.
             MessageBox.Show("Thanks for rating!");
 
+            Color c40 = Color.FromArgb(40, 40, 40);
+
+            submitButton.Enabled = false;
+            opt1.Enabled = false;
+            opt2.Enabled = false;
+            opt3.Enabled = false;
+            opt4.Enabled = false;
+            opt5.Enabled = false;
+            opt1.BackColor = c40;
+            opt2.BackColor = c40;
+            opt3.BackColor = c40;
+            opt4.BackColor = c40;
+            opt5.BackColor = c40;
+            submitButton.BackColor = c40;
+
             AboutBtn_OnClick(sender, e);
         }
         #endregion
@@ -195,6 +210,8 @@ namespace Site_Details
         
         void ActivateRating(int num)
         {
+            submitButton.Enabled = true;
+
             Color activeColor = Color.FromArgb(255, 128, 0);
             Color offColor = Color.FromArgb(64, 64, 64);
             Color activeBackColor = Color.FromArgb(40, 40, 40);
