@@ -22,7 +22,7 @@ As of version 1.0.1-beta, the app only runs in-IDE using Visual Studio 2022 with
 
 ![image](https://user-images.githubusercontent.com/72731965/161649128-0f03b6f4-b20a-418f-8686-959f48ffb65b.png)
 
-3. Go to your downloads folder, then **extract `InfoApp-1.0.0-beta.zip`**.
+3. Go to your downloads folder, then **extract `InfoApp-1.0.1-beta.zip`**.
 
 4. Go to the extracted folder (same name, without the `.zip`), then **open `Site Details.sln`**. This will open the solution and project in Visual Studio.
 
