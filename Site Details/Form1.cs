@@ -102,10 +102,10 @@ namespace Site_Details
         }
 
         //When aboutButton is clicked...
-        private void aboutBtn_OnClick(object sender, EventArgs e)
+        private void AboutBtn_OnClick(object sender, EventArgs e)
         {
             //Make the text display visible.
-            tabVisibility(true);
+            TabVisibility(true);
 
             //Set the text to value of details.About.
             displayText.Lines = details.About;
@@ -115,7 +115,7 @@ namespace Site_Details
         private void RulesBtn_OnClick(object sender, EventArgs e)
         {
             //Make the text display visible.
-            tabVisibility(true);
+            TabVisibility(true);
 
             //Set the text to value of details.Rules.
             displayText.Lines = details.Rules;
@@ -126,34 +126,34 @@ namespace Site_Details
         {
             //Make the text display invisible.
             //Subsequently, this also makes the buttons visible.
-            tabVisibility(false);
+            TabVisibility(false);
         }
         #endregion
 
         #region Rate button events
         private void Rate5Btn_OnClick(object sender, EventArgs e)
         {
-            activateRating(5);
+            ActivateRating(5);
         }
 
         private void Rate4Btn_OnClick(object sender, EventArgs e)
         {
-            activateRating(4);
+            ActivateRating(4);
         }
 
         private void Rate3Btn_OnClick(object sender, EventArgs e)
         {
-            activateRating(3);
+            ActivateRating(3);
         }
 
         private void Rate2Btn_OnClick(object sender, EventArgs e)
         {
-            activateRating(2);
+            ActivateRating(2);
         }
 
         private void Rate1Btn_OnClick(object sender, EventArgs e)
         {
-            activateRating(1);
+            ActivateRating(1);
         }
 
         private void SubmitBtn_OnClick(object sender, EventArgs e)
@@ -168,7 +168,7 @@ namespace Site_Details
         /// Toggles the visibility of tabs. Set to TRUE to set the text box visible. Set to FALSE to set the rating visible.
         /// </summary>
         /// <param name="opt"></param>
-        void tabVisibility(bool opt)
+        void TabVisibility(bool opt)
         {
             opt = !opt; //Reversing value for simplicity.
 
@@ -189,7 +189,7 @@ namespace Site_Details
         }
 
         
-        void activateRating(int num)
+        void ActivateRating(int num)
         {
 
             //Note to self: Don't use ELSE.
