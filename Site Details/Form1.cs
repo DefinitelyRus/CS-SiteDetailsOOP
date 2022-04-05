@@ -133,6 +133,7 @@ namespace Site_Details
         #endregion
 
         #region Rate button events
+        //These will activate when their respective buttons are clicked.
         private void Rate5Btn_OnClick(object sender, EventArgs e)
         {
             ActivateRating(5);
@@ -158,19 +159,23 @@ namespace Site_Details
             ActivateRating(1);
         }
 
+        //When the submit button is clicked...
         private void SubmitBtn_OnClick(object sender, EventArgs e)
         {
-            //Displays a popup message.
-            MessageBox.Show("Thanks for rating!");
-
             Color c40 = Color.FromArgb(40, 40, 40);
 
+            //Display a popup message.
+            MessageBox.Show("Thanks for rating!");
+
+            //Make these elements unclickable.
             submitButton.Enabled = false;
             opt5.Enabled = false;
             opt4.Enabled = false;
             opt3.Enabled = false;
             opt2.Enabled = false;
             opt1.Enabled = false;
+
+            //Change these elements' background colors to #444 gray.
             opt5.BackColor = c40;
             opt4.BackColor = c40;
             opt3.BackColor = c40;
@@ -178,6 +183,7 @@ namespace Site_Details
             opt1.BackColor = c40;
             submitButton.BackColor = c40;
 
+            //Simulate About button click.
             AboutBtn_OnClick(sender, e);
         }
         #endregion
@@ -210,6 +216,7 @@ namespace Site_Details
         
         void ActivateRating(int num)
         {
+            //Make the submit button clickable.
             submitButton.Enabled = true;
 
             Color orange = Color.FromArgb(255, 128, 0);
@@ -217,6 +224,9 @@ namespace Site_Details
             Color gray2 = Color.FromArgb(40, 40, 40);
             Color gray3 = Color.FromArgb(34, 34, 34);
 
+            //5 Stars
+            //If the number is NOT 5, change the colors to gray 1 and 3 respectively.
+            //Else (if the number IS 5), change the colors to orange and gray 2 respectively.
             if (num != 5)
             {
                 opt5Label.ForeColor = gray1;
@@ -227,6 +237,7 @@ namespace Site_Details
                 opt5.BackColor = gray2;
 			}
 
+            //4 Stars
             if (num != 4)
 			{
                 opt4Label.ForeColor = gray1;
@@ -237,6 +248,7 @@ namespace Site_Details
                 opt4.BackColor = gray2;
             }
 
+            //3 stars
             if (num != 3)
             {
                 opt3Label.ForeColor = gray1;
@@ -248,6 +260,7 @@ namespace Site_Details
                 opt3.BackColor = gray2;
             }
 
+            //2 stars
             if (num != 2)
             {
                 opt2Label.ForeColor = gray1;
@@ -259,6 +272,7 @@ namespace Site_Details
                 opt2.BackColor = gray2;
             }
 
+            //1 star
             if (num != 1)
             {
                 opt1Label.ForeColor = gray1;
@@ -285,6 +299,7 @@ namespace Site_Details
             this.Rate = rateTexts;
         }
 
+        //Declares the object attributes, along with their getters and setters.
         public string[] About { get; set; }
 
         public string[] Rules { get; set; }
