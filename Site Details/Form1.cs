@@ -193,9 +193,62 @@ namespace Site_Details
         
         void ActivateRating(int num)
         {
+            Color activeColor = Color.FromArgb(255, 128, 0);
+            Color offColor = Color.FromArgb(64, 64, 64);
+            Color activeBackColor = Color.FromArgb(40, 40, 40);
+            Color offBackColor = Color.FromArgb(34, 34, 34);
+
+            if (num != 5)
+            {
+                opt1Label.ForeColor = offColor;
+                opt1.BackColor = offBackColor;
+            } else
+			{
+                opt1Label.ForeColor = activeColor;
+                opt1.BackColor = activeBackColor;
+			}
+
+            if (num != 4)
+			{
+                opt2Label.ForeColor = offColor;
+                opt2.BackColor= offBackColor;
+			} else
+			{
+                opt2Label.ForeColor = activeColor;
+                opt2.BackColor = activeBackColor;
+            }
+
+            if (num != 3)
+            {
+                opt3Label.ForeColor = offColor;
+                opt3.BackColor = offBackColor;
+            }
+            else
+            {
+                opt3Label.ForeColor = activeColor;
+                opt3.BackColor = activeBackColor;
+            }
+
+            if (num != 2)
+            {
+                opt4Label.ForeColor = offColor;
+                opt4.BackColor = offBackColor;
+            }
+            else
+            {
+                opt4Label.ForeColor = activeColor;
+                opt4.BackColor = activeBackColor;
+            }
 
             if (num != 1)
             {
+                opt5Label.ForeColor = offColor;
+                opt5.BackColor = offBackColor;
+            }
+            else
+            {
+                opt5Label.ForeColor = activeColor;
+                opt5.BackColor = activeBackColor;
             }
         }
 		#endregion
