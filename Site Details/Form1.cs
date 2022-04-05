@@ -5,7 +5,10 @@ namespace Site_Details
         #region Declaration
 
         //Declares a SiteDetails variable with no assigned value.
-        public SiteDetails details;
+        private SiteDetails details;
+        readonly private Color orange = Color.FromArgb(255, 162, 68);
+        readonly private Color gray0 = Color.FromArgb(34, 34, 34);
+        readonly private Color black = Color.Black;
 
         public Form1()
         {
@@ -60,23 +63,23 @@ namespace Site_Details
                 "following a counterclockwise direction.",
                 "" ,
                 "4. The service of lunch or dinner follows this order: ",
-                "    a. As soon as the guest is seated, fill the water glass three - fourths full with " +
+                "\ta. As soon as the guest is seated, fill the water glass three - fourths full with " +
                 "ice water. Keep the water glass refilled continuously during the meal." ,
-                "    b. Serve chilled butter on a bread and butter plate and the appetizer at the " +
+                "\tb. Serve chilled butter on a bread and butter plate and the appetizer at the " +
                 "center of the cover, if these are included in the menu.",
-                "    c. When the guest is through, remove the appetizer dish.",
-                "    d. Serve the soup at the center of the cover.",
-                "    e. Remove the soup plate or soup bowl after the guest is finished with the course.",
-                "    f. Serve the main dish or entree at the center of the cover in front of the guest.",
-                "    g. When the guest is through, remove main dishes and used flatware. Leave " +
+                "\tc. When the guest is through, remove the appetizer dish.",
+                "\td. Serve the soup at the center of the cover.",
+                "\te. Remove the soup plate or soup bowl after the guest is finished with the course.",
+                "\tf. Serve the main dish or entree at the center of the cover in front of the guest.",
+                "\tg. When the guest is through, remove main dishes and used flatware. Leave " +
                 "the water glass, which is constantly replenished throughout the meal. Leave " +
                 "the dessert implements, either teaspoon or dessert fork, if they are set on " +
                 "the table.",
-                "    h. If morsels of food or crumbs are on the table, clear the table with the use " +
+                "\th. If morsels of food or crumbs are on the table, clear the table with the use " +
                 "of a napkin.",
-                "    i. Set the dessert implements if they have not yet been set.",
-                "    j. Serve the dessert at the center of the cover.",
-                "    k. Serve the beverage, if the diner prefers that it be served with the dessert. " +
+                "\ti. Set the dessert implements if they have not yet been set.",
+                "\tj. Serve the dessert at the center of the cover.",
+                "\tk. Serve the beverage, if the diner prefers that it be served with the dessert. " +
                 "Otherwise, beverage may be served after the dessert.",
                 "" ,
                 "5. For breakfast, the order of service begins with the fruit or fruit juice.This is " +
@@ -94,31 +97,49 @@ namespace Site_Details
 
             //Applies changes on startup.
             displayText.Lines = details.About;
-            opt1.Text = details.Rate[0];
-            opt2.Text = details.Rate[1];
+            opt5.Text = details.Rate[0];
+            opt4.Text = details.Rate[1];
             opt3.Text = details.Rate[2];
-            opt4.Text = details.Rate[3];
-            opt5.Text = details.Rate[4];
+            opt2.Text = details.Rate[3];
+            opt1.Text = details.Rate[4];
         }
 
         //When aboutButton is clicked...
-        private void aboutBtn_OnClick(object sender, EventArgs e)
+        private void AboutBtn_OnClick(object sender, EventArgs e)
         {
             //Make the text display visible.
-            tabVisibility(true);
+            TabVisibility(true);
 
             //Set the text to value of details.About.
             displayText.Lines = details.About;
+            displayText.ScrollBars = ScrollBars.None;
+
+            //Change button colors.
+            aboutButton.ForeColor = black;
+            aboutButton.BackColor = orange;
+            rulesButton.ForeColor = orange;
+            rulesButton.BackColor = gray0;
+            rateButton.ForeColor = orange;
+            rateButton.BackColor = gray0;
         }
 
         //When rulesButton is clicked...
         private void RulesBtn_OnClick(object sender, EventArgs e)
         {
             //Make the text display visible.
-            tabVisibility(true);
+            TabVisibility(true);
 
             //Set the text to value of details.Rules.
             displayText.Lines = details.Rules;
+            displayText.ScrollBars = ScrollBars.Vertical;
+
+            //Change button colors.
+            aboutButton.ForeColor = orange;
+            aboutButton.BackColor = gray0;
+            rulesButton.ForeColor= black;
+            rulesButton.BackColor = orange;
+            rateButton.ForeColor= orange;
+            rateButton.BackColor = gray0;
         }
 
         //When rateButton is clicked...
@@ -126,40 +147,74 @@ namespace Site_Details
         {
             //Make the text display invisible.
             //Subsequently, this also makes the buttons visible.
-            tabVisibility(false);
+            TabVisibility(false);
+
+            //Change button colors.
+            aboutButton.ForeColor = orange;
+            aboutButton.BackColor = gray0;
+            rulesButton.ForeColor = orange;
+            rulesButton.BackColor = gray0;
+            rateButton.ForeColor = black;
+            rateButton.BackColor = orange;
         }
         #endregion
 
         #region Rate button events
+        //These will activate when their respective buttons are clicked.
         private void Rate5Btn_OnClick(object sender, EventArgs e)
         {
-            activateRating(5);
+            ActivateRating(5);
         }
 
         private void Rate4Btn_OnClick(object sender, EventArgs e)
         {
-            activateRating(4);
+            ActivateRating(4);
         }
 
         private void Rate3Btn_OnClick(object sender, EventArgs e)
         {
-            activateRating(3);
+            ActivateRating(3);
         }
 
         private void Rate2Btn_OnClick(object sender, EventArgs e)
         {
-            activateRating(2);
+            ActivateRating(2);
         }
 
         private void Rate1Btn_OnClick(object sender, EventArgs e)
         {
-            activateRating(1);
+            ActivateRating(1);
         }
 
+        //When the submit button is clicked...
         private void SubmitBtn_OnClick(object sender, EventArgs e)
         {
-            //Displays a popup message.
+            Color c40 = Color.FromArgb(40, 40, 40);
+
+            //Display a popup message.
             MessageBox.Show("Thanks for rating!");
+
+            //Make these elements unclickable.
+            submitButton.Enabled = false;
+            opt5.Enabled = false;
+            opt4.Enabled = false;
+            opt3.Enabled = false;
+            opt2.Enabled = false;
+            opt1.Enabled = false;
+
+            //Change these elements' background colors to #444 gray.
+            opt5.BackColor = c40;
+            opt4.BackColor = c40;
+            opt3.BackColor = c40;
+            opt2.BackColor = c40;
+            opt1.BackColor = c40;
+            submitButton.BackColor = c40;
+
+            //Change the rateUsLabel text to...
+            rateUsLabel.Text = "Thanks for rating!";
+
+            //Simulate About button click.
+            AboutBtn_OnClick(sender, e);
         }
         #endregion
 
@@ -168,34 +223,95 @@ namespace Site_Details
         /// Toggles the visibility of tabs. Set to TRUE to set the text box visible. Set to FALSE to set the rating visible.
         /// </summary>
         /// <param name="opt"></param>
-        void tabVisibility(bool opt)
+        void TabVisibility(bool opt)
         {
             opt = !opt; //Reversing value for simplicity.
 
             //Make the individual elements visible or invisible.
             displayText.Visible = !opt;
-            opt1.Visible = opt;
-            opt2.Visible = opt;
-            opt3.Visible = opt;
-            opt4.Visible = opt;
             opt5.Visible = opt;
-            opt1Label.Visible = opt;
-            opt2Label.Visible = opt;
-            opt3Label.Visible = opt;
-            opt4Label.Visible = opt;
+            opt4.Visible = opt;
+            opt3.Visible = opt;
+            opt2.Visible = opt;
+            opt1.Visible = opt;
             opt5Label.Visible = opt;
+            opt4Label.Visible = opt;
+            opt3Label.Visible = opt;
+            opt2Label.Visible = opt;
+            opt1Label.Visible = opt;
             rateUsLabel.Visible = opt;
             submitButton.Visible = opt;
         }
 
         
-        void activateRating(int num)
+        void ActivateRating(int num)
         {
+            //Make the submit button clickable.
+            submitButton.Enabled = true;
 
-            //Note to self: Don't use ELSE.
+            Color orange = Color.FromArgb(255, 128, 0);
+            Color gray1 = Color.FromArgb(64, 64, 64);
+            Color gray2 = Color.FromArgb(40, 40, 40);
+            Color gray3 = Color.FromArgb(34, 34, 34);
+
+            //5 Stars
+            //If the number is NOT 5, change the colors to gray 1 and 3 respectively.
+            //Else (if the number IS 5), change the colors to orange and gray 2 respectively.
+            if (num != 5)
+            {
+                opt5Label.ForeColor = gray1;
+                opt5.BackColor = gray3;
+            } else
+			{
+                opt5Label.ForeColor = orange;
+                opt5.BackColor = gray2;
+			}
+
+            //4 Stars
+            if (num != 4)
+			{
+                opt4Label.ForeColor = gray1;
+                opt4.BackColor= gray3;
+			} else
+			{
+                opt4Label.ForeColor = orange;
+                opt4.BackColor = gray2;
+            }
+
+            //3 stars
+            if (num != 3)
+            {
+                opt3Label.ForeColor = gray1;
+                opt3.BackColor = gray3;
+            }
+            else
+            {
+                opt3Label.ForeColor = orange;
+                opt3.BackColor = gray2;
+            }
+
+            //2 stars
+            if (num != 2)
+            {
+                opt2Label.ForeColor = gray1;
+                opt2.BackColor = gray3;
+            }
+            else
+            {
+                opt2Label.ForeColor = orange;
+                opt2.BackColor = gray2;
+            }
+
+            //1 star
             if (num != 1)
             {
-                //Change colors of opt1 and reset others'.
+                opt1Label.ForeColor = gray1;
+                opt1.BackColor = gray3;
+            }
+            else
+            {
+                opt1Label.ForeColor = orange;
+                opt1.BackColor = gray2;
             }
         }
 		#endregion
@@ -213,6 +329,7 @@ namespace Site_Details
             this.Rate = rateTexts;
         }
 
+        //Declares the object attributes, along with their getters and setters.
         public string[] About { get; set; }
 
         public string[] Rules { get; set; }
