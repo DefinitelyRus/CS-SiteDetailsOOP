@@ -109,6 +109,7 @@ namespace Site_Details
 
             //Set the text to value of details.About.
             displayText.Lines = details.About;
+            displayText.ScrollBars = ScrollBars.None;
         }
 
         //When rulesButton is clicked...
@@ -119,6 +120,7 @@ namespace Site_Details
 
             //Set the text to value of details.Rules.
             displayText.Lines = details.Rules;
+            displayText.ScrollBars = ScrollBars.Vertical;
         }
 
         //When rateButton is clicked...
