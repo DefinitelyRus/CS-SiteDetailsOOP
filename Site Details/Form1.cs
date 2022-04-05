@@ -60,23 +60,23 @@ namespace Site_Details
                 "following a counterclockwise direction.",
                 "" ,
                 "4. The service of lunch or dinner follows this order: ",
-                "    a. As soon as the guest is seated, fill the water glass three - fourths full with " +
+                "\ta. As soon as the guest is seated, fill the water glass three - fourths full with " +
                 "ice water. Keep the water glass refilled continuously during the meal." ,
-                "    b. Serve chilled butter on a bread and butter plate and the appetizer at the " +
+                "\tb. Serve chilled butter on a bread and butter plate and the appetizer at the " +
                 "center of the cover, if these are included in the menu.",
-                "    c. When the guest is through, remove the appetizer dish.",
-                "    d. Serve the soup at the center of the cover.",
-                "    e. Remove the soup plate or soup bowl after the guest is finished with the course.",
-                "    f. Serve the main dish or entree at the center of the cover in front of the guest.",
-                "    g. When the guest is through, remove main dishes and used flatware. Leave " +
+                "\tc. When the guest is through, remove the appetizer dish.",
+                "\td. Serve the soup at the center of the cover.",
+                "\te. Remove the soup plate or soup bowl after the guest is finished with the course.",
+                "\tf. Serve the main dish or entree at the center of the cover in front of the guest.",
+                "\tg. When the guest is through, remove main dishes and used flatware. Leave " +
                 "the water glass, which is constantly replenished throughout the meal. Leave " +
                 "the dessert implements, either teaspoon or dessert fork, if they are set on " +
                 "the table.",
-                "    h. If morsels of food or crumbs are on the table, clear the table with the use " +
+                "\th. If morsels of food or crumbs are on the table, clear the table with the use " +
                 "of a napkin.",
-                "    i. Set the dessert implements if they have not yet been set.",
-                "    j. Serve the dessert at the center of the cover.",
-                "    k. Serve the beverage, if the diner prefers that it be served with the dessert. " +
+                "\ti. Set the dessert implements if they have not yet been set.",
+                "\tj. Serve the dessert at the center of the cover.",
+                "\tk. Serve the beverage, if the diner prefers that it be served with the dessert. " +
                 "Otherwise, beverage may be served after the dessert.",
                 "" ,
                 "5. For breakfast, the order of service begins with the fruit or fruit juice.This is " +
