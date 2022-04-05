@@ -94,11 +94,11 @@ namespace Site_Details
 
             //Applies changes on startup.
             displayText.Lines = details.About;
-            opt1.Text = details.Rate[0];
-            opt2.Text = details.Rate[1];
+            opt5.Text = details.Rate[0];
+            opt4.Text = details.Rate[1];
             opt3.Text = details.Rate[2];
-            opt4.Text = details.Rate[3];
-            opt5.Text = details.Rate[4];
+            opt2.Text = details.Rate[3];
+            opt1.Text = details.Rate[4];
         }
 
         //When aboutButton is clicked...
@@ -166,16 +166,16 @@ namespace Site_Details
             Color c40 = Color.FromArgb(40, 40, 40);
 
             submitButton.Enabled = false;
-            opt1.Enabled = false;
-            opt2.Enabled = false;
-            opt3.Enabled = false;
-            opt4.Enabled = false;
             opt5.Enabled = false;
-            opt1.BackColor = c40;
-            opt2.BackColor = c40;
-            opt3.BackColor = c40;
-            opt4.BackColor = c40;
+            opt4.Enabled = false;
+            opt3.Enabled = false;
+            opt2.Enabled = false;
+            opt1.Enabled = false;
             opt5.BackColor = c40;
+            opt4.BackColor = c40;
+            opt3.BackColor = c40;
+            opt2.BackColor = c40;
+            opt1.BackColor = c40;
             submitButton.BackColor = c40;
 
             AboutBtn_OnClick(sender, e);
@@ -193,16 +193,16 @@ namespace Site_Details
 
             //Make the individual elements visible or invisible.
             displayText.Visible = !opt;
-            opt1.Visible = opt;
-            opt2.Visible = opt;
-            opt3.Visible = opt;
-            opt4.Visible = opt;
             opt5.Visible = opt;
-            opt1Label.Visible = opt;
-            opt2Label.Visible = opt;
-            opt3Label.Visible = opt;
-            opt4Label.Visible = opt;
+            opt4.Visible = opt;
+            opt3.Visible = opt;
+            opt2.Visible = opt;
+            opt1.Visible = opt;
             opt5Label.Visible = opt;
+            opt4Label.Visible = opt;
+            opt3Label.Visible = opt;
+            opt2Label.Visible = opt;
+            opt1Label.Visible = opt;
             rateUsLabel.Visible = opt;
             submitButton.Visible = opt;
         }
@@ -219,55 +219,55 @@ namespace Site_Details
 
             if (num != 5)
             {
-                opt1Label.ForeColor = offColor;
-                opt1.BackColor = offBackColor;
+                opt5Label.ForeColor = gray1;
+                opt5.BackColor = gray3;
             } else
 			{
-                opt1Label.ForeColor = activeColor;
-                opt1.BackColor = activeBackColor;
+                opt5Label.ForeColor = orange;
+                opt5.BackColor = gray2;
 			}
 
             if (num != 4)
 			{
-                opt2Label.ForeColor = offColor;
-                opt2.BackColor= offBackColor;
+                opt4Label.ForeColor = gray1;
+                opt4.BackColor= gray3;
 			} else
 			{
-                opt2Label.ForeColor = activeColor;
-                opt2.BackColor = activeBackColor;
+                opt4Label.ForeColor = orange;
+                opt4.BackColor = gray2;
             }
 
             if (num != 3)
             {
-                opt3Label.ForeColor = offColor;
-                opt3.BackColor = offBackColor;
+                opt3Label.ForeColor = gray1;
+                opt3.BackColor = gray3;
             }
             else
             {
-                opt3Label.ForeColor = activeColor;
-                opt3.BackColor = activeBackColor;
+                opt3Label.ForeColor = orange;
+                opt3.BackColor = gray2;
             }
 
             if (num != 2)
             {
-                opt4Label.ForeColor = offColor;
-                opt4.BackColor = offBackColor;
+                opt2Label.ForeColor = gray1;
+                opt2.BackColor = gray3;
             }
             else
             {
-                opt4Label.ForeColor = activeColor;
-                opt4.BackColor = activeBackColor;
+                opt2Label.ForeColor = orange;
+                opt2.BackColor = gray2;
             }
 
             if (num != 1)
             {
-                opt5Label.ForeColor = offColor;
-                opt5.BackColor = offBackColor;
+                opt1Label.ForeColor = gray1;
+                opt1.BackColor = gray3;
             }
             else
             {
-                opt5Label.ForeColor = activeColor;
-                opt5.BackColor = activeBackColor;
+                opt1Label.ForeColor = orange;
+                opt1.BackColor = gray2;
             }
         }
 		#endregion
