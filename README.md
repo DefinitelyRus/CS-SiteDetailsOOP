@@ -35,7 +35,7 @@ As of version 1.1.1-beta, the app only runs in-IDE using Visual Studio 2022 with
 6. **Close Visual Studio and reopen `Site Details.sln`.** You can now run the program by pressing the same button (see step 5).
 
 ## How to use
-![image](https://user-images.githubusercontent.com/72731965/161686809-43e63cd7-0d46-4e9c-a03d-b25663f6c391.png)
+![image](https://user-images.githubusercontent.com/72731965/161687717-298a8008-319f-4995-978c-1bb8831d327f.png)
 
 The use of this application is not linear and is an almost fully read-only experience; there is no real need for instructions. Regardless, here are some basics:
 
