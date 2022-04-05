@@ -92,7 +92,7 @@
 			// 
 			this.displayText.AcceptsReturn = true;
 			this.displayText.AcceptsTab = true;
-			this.displayText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.displayText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
 			this.displayText.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.displayText.Font = new System.Drawing.Font("Segoe UI Light", 21F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
 			this.displayText.ForeColor = System.Drawing.Color.Silver;
@@ -101,7 +101,6 @@
 			this.displayText.Name = "displayText";
 			this.displayText.PlaceholderText = "dummy.";
 			this.displayText.ReadOnly = true;
-			this.displayText.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
 			this.displayText.Size = new System.Drawing.Size(1426, 554);
 			this.displayText.TabIndex = 4;
 			// 
@@ -122,7 +121,7 @@
 			// 
 			// opt1
 			// 
-			this.opt1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+			this.opt1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
 			this.opt1.FlatAppearance.BorderSize = 0;
 			this.opt1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.opt1.Font = new System.Drawing.Font("Segoe UI Light", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -138,7 +137,7 @@
 			// 
 			// opt2
 			// 
-			this.opt2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+			this.opt2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
 			this.opt2.FlatAppearance.BorderSize = 0;
 			this.opt2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.opt2.Font = new System.Drawing.Font("Segoe UI Light", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -154,7 +153,7 @@
 			// 
 			// opt3
 			// 
-			this.opt3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+			this.opt3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
 			this.opt3.FlatAppearance.BorderSize = 0;
 			this.opt3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.opt3.Font = new System.Drawing.Font("Segoe UI Light", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -170,7 +169,7 @@
 			// 
 			// opt4
 			// 
-			this.opt4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+			this.opt4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
 			this.opt4.FlatAppearance.BorderSize = 0;
 			this.opt4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.opt4.Font = new System.Drawing.Font("Segoe UI Light", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -186,7 +185,7 @@
 			// 
 			// opt5
 			// 
-			this.opt5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+			this.opt5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
 			this.opt5.FlatAppearance.BorderSize = 0;
 			this.opt5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.opt5.Font = new System.Drawing.Font("Segoe UI Light", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
