@@ -183,6 +183,9 @@ namespace Site_Details
             opt1.BackColor = c40;
             submitButton.BackColor = c40;
 
+            //Change the rateUsLabel text to...
+            rateUsLabel.Text = "Thanks for rating!";
+
             //Simulate About button click.
             AboutBtn_OnClick(sender, e);
         }
