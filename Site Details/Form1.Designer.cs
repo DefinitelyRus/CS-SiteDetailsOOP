@@ -75,11 +75,12 @@
 			// 
 			// rulesButton
 			// 
-			this.rulesButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
+			this.rulesButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
 			this.rulesButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
 			this.rulesButton.FlatAppearance.BorderSize = 0;
 			this.rulesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.rulesButton.Font = new System.Drawing.Font("Segoe UI Light", 21F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.rulesButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
 			this.rulesButton.Location = new System.Drawing.Point(1008, 12);
 			this.rulesButton.Name = "rulesButton";
 			this.rulesButton.Size = new System.Drawing.Size(207, 94);
@@ -107,11 +108,12 @@
 			// 
 			// rateButton
 			// 
-			this.rateButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
+			this.rateButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
 			this.rateButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
 			this.rateButton.FlatAppearance.BorderSize = 0;
 			this.rateButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.rateButton.Font = new System.Drawing.Font("Segoe UI Light", 21F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+			this.rateButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(162)))), ((int)(((byte)(68)))));
 			this.rateButton.Location = new System.Drawing.Point(1221, 12);
 			this.rateButton.Name = "rateButton";
 			this.rateButton.Size = new System.Drawing.Size(217, 94);
