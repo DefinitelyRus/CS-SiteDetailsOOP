@@ -103,6 +103,7 @@
 			this.displayText.ReadOnly = true;
 			this.displayText.Size = new System.Drawing.Size(1426, 554);
 			this.displayText.TabIndex = 4;
+			this.displayText.TabStop = false;
 			// 
 			// rateButton
 			// 
@@ -288,7 +289,6 @@
 			// 
 			// Form1
 			// 
-			this.AcceptButton = this.aboutButton;
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
 			this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
