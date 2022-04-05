@@ -212,10 +212,10 @@ namespace Site_Details
         {
             submitButton.Enabled = true;
 
-            Color activeColor = Color.FromArgb(255, 128, 0);
-            Color offColor = Color.FromArgb(64, 64, 64);
-            Color activeBackColor = Color.FromArgb(40, 40, 40);
-            Color offBackColor = Color.FromArgb(34, 34, 34);
+            Color orange = Color.FromArgb(255, 128, 0);
+            Color gray1 = Color.FromArgb(64, 64, 64);
+            Color gray2 = Color.FromArgb(40, 40, 40);
+            Color gray3 = Color.FromArgb(34, 34, 34);
 
             if (num != 5)
             {
