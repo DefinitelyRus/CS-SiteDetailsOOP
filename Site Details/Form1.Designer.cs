@@ -103,7 +103,7 @@
 			this.displayText.PlaceholderText = "dummy.";
 			this.displayText.ReadOnly = true;
 			this.displayText.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-			this.displayText.Size = new System.Drawing.Size(1113, 479);
+			this.displayText.Size = new System.Drawing.Size(1115, 466);
 			this.displayText.TabIndex = 4;
 			this.displayText.TabStop = false;
 			// 
