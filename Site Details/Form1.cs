@@ -42,48 +42,53 @@ namespace Site_Details
                 "ito'y maging patok din sa masa, ito ay proud pinoy brand na naglalayong " +
                 "makarating ng ibat ibang bansa at makilala. Pinagmamalaki nila ang burger na " +
                 "kung tawagin ay soo lit' dahil ito'y swak na swak sa bulsa ng masa ngunit kakaiba " +
-                "ang sarap na naibibigay. Ang YUMMY TEH FUD DA SAI' din ang pwedeng maging " +
-                "kauna - unahang brand na maitatatag dahil lamang sa proyekto nila noong " +
+                "ang sarap na naibibigay.",
+                "",
+                "Ang YUMMY TEH FUD DA SAI' din ang pwedeng maging " +
+                "kauna-unahang brand na maitatatag dahil lamang sa proyekto nila noong " +
                 "highschool. Hindi pa laganap ang aming branch ngunit patuloy na nagsisikap " +
                 "upang makilala at tangkilikin ng kapawa kababayan natin ang produktong sariling " +
-                "atin. Muli ito ang YUMMY TEH FUD DA SAI' order na!",
+                "atin.",
+                "",
+                "Muli ito ang YUMMY TEH FUD DA SAI' order na!",
                 "",
                 "To place order kindly go to www.yummytehfuddasai.com.ph",
                 "Landline number: 069 - 6969"
             };
             string[] rules = new string[]
             {
-                "1. In banquets and formal gatherings, serve the host/hostess or the guest of " +
-                "honor first, following a counterclockwise direction.",
+                "1. In banquets and formal gatherings, serve the host/hostess or the guest of honor first,",
+                "   following a counterclockwise direction.",
                 "" ,
-                "2. In informal groups, serve the hostess first if she is known.If the hostess is not " +
-                "identified, start with the most senior female in the group." ,
+                "2. In informal groups, serve the hostess first if she is known.",
+                "   If the hostess is not identified, start with the most senior female in the group.",
                 "" ,
-                "3. In small, intimate groups, serve the female first, then the males.Serve " +
-                "following a counterclockwise direction.",
+                "3. In small, intimate groups, serve the female first, then the males.",
+                "   Serve following a counterclockwise direction.",
                 "" ,
                 "4. The service of lunch or dinner follows this order: ",
-                "\ta. As soon as the guest is seated, fill the water glass three - fourths full with " +
-                "ice water. Keep the water glass refilled continuously during the meal." ,
-                "\tb. Serve chilled butter on a bread and butter plate and the appetizer at the " +
-                "center of the cover, if these are included in the menu.",
+                "\ta. As soon as the guest is seated,",
+                "\t   fill the water glass three-fourths full with ice water.",
+                "\t   Keep the water glass refilled continuously during the meal." ,
+                "\tb. Serve chilled butter on a bread and butter plate and the appetizer at the ",
+                "\t   center of the cover, if these are included in the menu.",
                 "\tc. When the guest is through, remove the appetizer dish.",
                 "\td. Serve the soup at the center of the cover.",
                 "\te. Remove the soup plate or soup bowl after the guest is finished with the course.",
                 "\tf. Serve the main dish or entree at the center of the cover in front of the guest.",
-                "\tg. When the guest is through, remove main dishes and used flatware. Leave " +
-                "the water glass, which is constantly replenished throughout the meal. Leave " +
-                "the dessert implements, either teaspoon or dessert fork, if they are set on " +
-                "the table.",
-                "\th. If morsels of food or crumbs are on the table, clear the table with the use " +
-                "of a napkin.",
+                "\tg. When the guest is through, remove main dishes and used flatware.",
+                "\t   Leave the water glass, which is constantly replenished throughout the meal.",
+                "\t   Leave the dessert implements, either teaspoon or dessert fork,",
+                "\t   if they are set on the table.",
+                "\th. If morsels of food or crumbs are on the table,",
+                "\t   clear the table with the use of a napkin.",
                 "\ti. Set the dessert implements if they have not yet been set.",
                 "\tj. Serve the dessert at the center of the cover.",
-                "\tk. Serve the beverage, if the diner prefers that it be served with the dessert. " +
-                "Otherwise, beverage may be served after the dessert.",
+                "\tk. Serve the beverage, if the diner prefers that it be served with the dessert.",
+                "\t   Otherwise, beverage may be served after the dessert.",
                 "" ,
-                "5. For breakfast, the order of service begins with the fruit or fruit juice.This is " +
-                "equivalent to soup and appetizer for lunch and dinner."
+                "5. For breakfast, the order of service begins with the fruit or fruit juice.",
+                "   This is equivalent to soup and appetizer for lunch and dinner."
             };
             string[] rateArray =
                 {
@@ -112,7 +117,6 @@ namespace Site_Details
 
             //Set the text to value of details.About.
             displayText.Lines = details.About;
-            displayText.ScrollBars = ScrollBars.None;
 
             //Change button colors.
             aboutButton.ForeColor = black;
@@ -131,7 +135,6 @@ namespace Site_Details
 
             //Set the text to value of details.Rules.
             displayText.Lines = details.Rules;
-            displayText.ScrollBars = ScrollBars.Vertical;
 
             //Change button colors.
             aboutButton.ForeColor = orange;
